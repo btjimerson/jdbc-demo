@@ -7,7 +7,7 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class Catalog {
+public class CatalogItem {
 
     private @Id Long id;
     private String name;

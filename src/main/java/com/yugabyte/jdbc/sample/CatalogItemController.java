@@ -5,13 +5,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class CatalogController {
+public class CatalogItemController {
 
     @Autowired
-    CatalogRepository catalogRepository;
+    CatalogItemRepository catalogRepository;
 
     @GetMapping("/catalog/items")
-    public Iterable<Catalog> getAllCatalogEntries() {
+    public Iterable<CatalogItem> getAllCatalogItems() {
 
         return catalogRepository.findAll();
     }
