@@ -1,3 +1,3 @@
-DROP TABLE IF EXISTS catalog_item;
+DROP TABLE IF EXISTS catalog_items;
 
-CREATE TABLE catalog_item(id BIGINT, name TEXT, description TEXT, amount DECIMAL, quantity INTEGER, PRIMARY KEY (id));
+CREATE TABLE catalog_items(id BIGINT, name TEXT, description TEXT, amount DECIMAL, quantity INTEGER, PRIMARY KEY (id));
